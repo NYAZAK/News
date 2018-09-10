@@ -52,6 +52,7 @@ function sendTweets(newsObjects) {
     for (let i = 0; i < tweetButtons.length; i++) {
         tweetButtons[i].addEventListener('click', function () {
             // Call Post Status function here
+            Twitter.postStatus(newsObjects[i].url);
             tweetButtons[i].innerHTML = "Tweeted";
         }, false);
     }
@@ -62,17 +63,17 @@ function sendTweets(newsObjects) {
 engadget.addEventListener('click', function () {
     main.innerHTML = ' ';
     // Call getNews() here
-    getNews(engadgetUrl).then(articlesArray => renderNews(articlesArray));
+    getNews(engadgetUrl).then(articlesArray => renderNews(articlesArray)).then(articles => sendTweets(articles));
 }, false);
 
 recode.addEventListener('click', function () {
     main.innerHTML = ' ';
     // Call getNews() here
-    getNews(recodeUrl).then(articlesArray => renderNews(articlesArray));
+    getNews(recodeUrl).then(articlesArray => renderNews(articlesArray)).then(articles => sendTweets(articles));
 }, false);
 
 nextWeb.addEventListener('click', function () {
     main.innerHTML = ' ';
     // Call getNews() here
-    getNews(nextWebUrl).then(articlesArray => renderNews(articlesArray));
+    getNews(nextWebUrl).then(articlesArray => renderNews(articlesArray)).then(articles => sendTweets(articles));
 }, false);
