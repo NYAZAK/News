@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -54,37 +141,37 @@ body {
     background-image: url('background-photo.svg');
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  header img {
+}
+
+header img {
     padding: 10px;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-family: Playfair Display;
     font-size: 76px;
     font-weight: bold;
     letter-spacing: 1.4px;
     text-align: center;
     padding: 20px;
-  }
-  
-  form {
+}
+
+form {
     margin: auto;
     text-align: center;
     margin-bottom: 5px;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-family: Playfair Display;
     font-size: 38px;
     line-height: 1.3;
     letter-spacing: 1.2px;
     color: #ffffff;
     padding: 10px 5px;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-family: Source Sans Pro;
     font-size: 18px;
     font-weight: 600;
@@ -93,9 +180,9 @@ body {
     text-align: left;
     color: #130284;
     padding: 5px;
-  }
-  
-  p {
+}
+
+p {
     font-family: Source Sans Pro;
     font-size: 18px;
     line-height: 1.33;
@@ -103,43 +190,44 @@ body {
     text-align: left;
     color: #130284;
     padding: 5px;
-  }
-  
-  i {
+}
+
+i {
     padding: 5px;
-  }
-  
-  button:focus {
+}
+
+button:focus {
     outline: 0;
-  }
-  .articlerow {
+}
+
+.articlerow {
     display: flex;
     padding: 10px;
     justify-content: space-between;
     min-height: 250px;
     border-top: solid 1px #ffffff;
     border-bottom: solid 1px #ffffff;
-  }
-  
-  .article {
+}
+
+.article {
     width: 66%;
-  }
-  
-  .share {
+}
+
+.share {
     width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     min-height: 200px;
-  }
-  
-  .storyimage {
+}
+
+.storyimage {
     width: 250px;
     height: auto;
-  }
-  
-  .tweet {
+}
+
+.tweet {
     padding: 5px;
     width: 163px;
     height: 42px;
@@ -154,9 +242,11 @@ body {
     letter-spacing: 0.5px;
     text-align: center;
     color: #a5c2e6;
-  }
-  
-  #engadget, #recode, #nextWeb {
+}
+
+#engadget,
+#recode,
+#nextWeb {
     font-family: Source Sans Pro;
     font-size: 18px;
     font-weight: 600;
@@ -169,62 +259,64 @@ body {
     width: 200px;
     height: 35px;
     padding: 5px;
-  }
-  
-  #engadget:focus, #recode:focus, #nextWeb:focus {
+}
+
+#engadget:focus,
+#recode:focus,
+#nextWeb:focus {
     border-bottom: solid 5px white;
     padding-bottom: 3px;
-  }
-  
-  @media (max-width: 640px) {
+}
+
+@media (max-width: 640px) {
     .articlerow {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-  
+
     .article {
-      width: 98%;
+        width: 98%;
     }
-  
+
     .share {
-      width: 98%;
-      flex-direction: row;
+        width: 98%;
+        flex-direction: row;
     }
-  
+
     form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-  
-    h1, h2 {
-      font-size: 24px;
+
+    h1,
+    h2 {
+        font-size: 24px;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .share {
-      flex-direction: column;
-      width: 98%;
+        flex-direction: column;
+        width: 98%;
     }
-  
+
     .readmore p {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .storyimage {
-      width: 100%;
-      height: auto;
+        width: 100%;
+        height: auto;
     }
-  
+
     a {
-      text-align: center;
+        text-align: center;
     }
+
     button {
-      margin-top: 10px;
+        margin-top: 10px;
     }
-  }
-  
-  
+}
