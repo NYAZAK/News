@@ -9,6 +9,7 @@ const oauthVersion = '1.0';
 const baseUrl = 'https://api.twitter.com/1.1/statuses/update.json';
 
 // Post Status Function
+
     Twitter.postStatus = async (status) =>{
         let response = await fetch(`https://cors-anywhere.herokuapp.com/${baseUrl}?status=${encodeData(status)}`, {
             method : 'POST',
@@ -21,6 +22,7 @@ const baseUrl = 'https://api.twitter.com/1.1/statuses/update.json';
         console.log('ici le jsonResponse de la page Twwiter.js', jsonResponse);
         return jsonResponse;
     }
+
 // Helper Functions
 
 Twitter.generateAuthorizationHeader = (status) => {
